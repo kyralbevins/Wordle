@@ -2,6 +2,7 @@ import requests
 import random
 import sys 
 
+
 def main():
 
     playGame()
@@ -69,8 +70,6 @@ def getYellowLetters(guess, answer):
     return [y for y in yellow_letters if y not in green_letters and y in list(answer)]
 
         
-            
-
 # this function generates a 5 letter word at random
 def generateRandomWord():
     url = 'https://www.mit.edu/~ecprice/wordlist.10000'
